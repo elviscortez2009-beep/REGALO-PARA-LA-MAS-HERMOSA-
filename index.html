@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7f2">
+  <meta name="description" content="Un pequeño regalo digital lleno de poemas, detalles y cariño.">
+  <title>Un regalo para ti ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">✦</span> para ti</a>
+    <nav class="tabs" aria-label="Secciones del regalo" role="tablist">
+      <button class="tab active" id="tab-inicio" role="tab" aria-selected="true" aria-controls="inicio" data-tab="inicio">Inicio</button>
+      <button class="tab" id="tab-poemas" role="tab" aria-selected="false" aria-controls="poemas" data-tab="poemas">Poemas</button>
+      <button class="tab" id="tab-frases" role="tab" aria-selected="false" aria-controls="frases" data-tab="frases">Frases</button>
+      <button class="tab" id="tab-detalles" role="tab" aria-selected="false" aria-controls="detalles" data-tab="detalles">Detalles</button>
+      <button class="tab" id="tab-razones" role="tab" aria-selected="false" aria-controls="razones" data-tab="razones">Mil razones</button>
+      <button class="tab" id="tab-sorpresa" role="tab" aria-selected="false" aria-controls="sorpresa" data-tab="sorpresa">Sorpresa <span class="tiny-heart">♥</span></button>
+    </nav>
+    <span class="top-note"><span class="pulse-dot"></span> hecho con cariño</span>
+  </header>
+
+  <main>
+    <section class="panel hero-panel active" id="inicio" role="tabpanel" aria-labelledby="tab-inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> UN DETALLE SOLO PARA TI</p>
+        <h1>Hay personas que<br>hacen más bonito <em>el mundo.</em></h1>
+        <p class="hero-text">Y luego estás tú, que haces más bonito el mío. Preparé este rinconcito para recordártelo cuando quieras.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" data-go="poemas">Descubrir mi regalo <span aria-hidden="true">↗</span></button>
+          <button class="text-button" id="random-phrase">Dime algo bonito <span aria-hidden="true">✧</span></button>
+        </div>
+        <div class="signature"><span class="signature-rule"></span><span>con todo mi cariño</span></div>
+      </div>
+
+      <div class="hero-art" aria-label="Un corazón tridimensional flotando">
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-inner"></div>
+        <span class="spark spark-one">✦</span><span class="spark spark-two">✧</span><span class="spark spark-three">·</span>
+        <div class="heart-scene"><div class="heart-3d"><span>♥</span></div></div>
+        <div class="floating-note note-top"><span class="note-icon">♡</span><span>mi lugar<br>favorito</span></div>
+        <div class="floating-note note-bottom"><span class="note-icon">✦</span><span>tú + yo<br>qué bonito</span></div>
+        <div class="art-caption">un pequeño universo <span>hecho para ti</span></div>
+      </div>
+      <div class="scroll-hint"><span></span> DESLIZA POR ESTE PEQUEÑO UNIVERSO</div>
+    </section>
+
+    <section class="panel content-panel" id="poemas" role="tabpanel" aria-labelledby="tab-poemas" hidden>
+      <div class="section-heading"><p class="eyebrow"><span class="eyebrow-line"></span> PALABRAS QUE ABRAZAN</p><h2>Un poema para <em>ti.</em></h2><p>Porque hay sentimientos que solo saben hablar en versos.</p></div>
+      <div class="poem-grid">
+        <article class="poem-card poem-featured"><span class="card-kicker">01 · mi favorito</span><div class="poem-flower">✿</div><h3>Donde estás tú</h3><p>Si el día se vuelve gris,<br>tu risa inventa la mañana.<br>Si el mundo corre deprisa,<br>tu calma me acompaña.<br><br>Y si me preguntan dónde<br>se siente bonito estar,<br>no digo un sitio del mapa:<br>digo donde tú estás.</p><span class="poem-sign">— para ti, siempre</span></article>
+        <article class="poem-card"><span class="card-kicker">02 · un secreto</span><div class="poem-flower flower-peach">☼</div><h3>Pequeñas cosas</h3><p>Tu forma de mirar el cielo,<br>de contarme cualquier cosa,<br>de hacer hogar de un momento<br>y de volverlo otra cosa.<br><br>Son detalles pequeñitos,<br>pero qué suerte la mía:<br>en todos encuentro un motivo<br>para elegirte cada día.</p><span class="poem-sign">— con una sonrisa</span></article>
+        <article class="poem-card"><span class="card-kicker">03 · sin prisa</span><div class="poem-flower flower-lilac">☾</div><h3>Mi lugar favorito</h3><p>No es una calle ni un café,<br>ni un paisaje frente al mar.<br>Mi lugar favorito del mundo<br>es donde te puedo encontrar.<br><br>Y si algún día te pierdes,<br>no hace falta preguntar:<br>sígueme el corazón despacio,<br>que ahí te voy a esperar.</p><span class="poem-sign">— cerquita de ti</span></article>
+      </div>
+    </section>
+
+    <section class="panel content-panel" id="frases" role="tabpanel" aria-labelledby="tab-frases" hidden>
+      <div class="section-heading"><p class="eyebrow"><span class="eyebrow-line"></span> PARA GUARDAR CERQUITA</p><h2>Pequeñas frases,<br><em>mucho cariño.</em></h2><p>Elige una tarjeta. Te puedes quedar con todas.</p></div>
+      <div class="phrase-grid">
+        <button class="phrase-card blush" data-copy="Qué bonito coincidir contigo en esta vida."><span>01 / coincidencias</span><strong>Qué bonito coincidir contigo en esta vida.</strong><small>toca para copiar <i>↗</i></small></button>
+        <button class="phrase-card cream" data-copy="Eres mi pensamiento favorito en los días normales."><span>02 / días normales</span><strong>Eres mi pensamiento favorito en los días normales.</strong><small>toca para copiar <i>↗</i></small></button>
+        <button class="phrase-card lilac" data-copy="Contigo, hasta lo cotidiano tiene un poquito de magia."><span>03 / magia cotidiana</span><strong>Contigo, hasta lo cotidiano tiene un poquito de magia.</strong><small>toca para copiar <i>↗</i></small></button>
+        <button class="phrase-card sage" data-copy="Si pudiera elegir un lugar, elegiría tu abrazo."><span>04 / mi lugar</span><strong>Si pudiera elegir un lugar, elegiría tu abrazo.</strong><small>toca para copiar <i>↗</i></small></button>
+        <button class="phrase-card cream" data-copy="Gracias por hacer que mi mundo se sienta más bonito."><span>05 / gracias</span><strong>Gracias por hacer que mi mundo se sienta más bonito.</strong><small>toca para copiar <i>↗</i></small></button>
+        <button class="phrase-card blush" data-copy="No necesito un día especial para celebrar que existes."><span>06 / siempre</span><strong>No necesito un día especial para celebrar que existes.</strong><small>toca para copiar <i>↗</i></small></button>
+      </div>
+      <p class="copy-status" id="copy-status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel content-panel" id="detalles" role="tabpanel" aria-labelledby="tab-detalles" hidden>
+      <div class="section-heading"><p class="eyebrow"><span class="eyebrow-line"></span> COSITAS QUE ME ENCANTAN</p><h2>Los detalles que hacen<br><em>que seas tú.</em></h2><p>No hacen falta grandes gestos para hacer algo inolvidable.</p></div>
+      <div class="detail-layout">
+        <div class="detail-list">
+          <article class="detail-item"><span class="detail-number">01</span><div><h3>Tu risa contagiosa</h3><p>Ese sonido que mejora cualquier día, incluso los lunes.</p></div><span class="detail-doodle">♡</span></article>
+          <article class="detail-item"><span class="detail-number">02</span><div><h3>Cómo prestas atención</h3><p>Haces que hasta las historias más pequeñas importen.</p></div><span class="detail-doodle">✦</span></article>
+          <article class="detail-item"><span class="detail-number">03</span><div><h3>Tu manera de cuidar</h3><p>En tus gestos vive una ternura que no se puede fingir.</p></div><span class="detail-doodle">♡</span></article>
+          <article class="detail-item"><span class="detail-number">04</span><div><h3>Simplemente, tú</h3><p>Sin cambiar nada. Así, siendo tú, ya eres muchísimo.</p></div><span class="detail-doodle">✧</span></article>
+        </div>
+        <aside class="little-note"><span class="note-stamp">PARA<br>RECORDAR</span><span class="note-big-quote">“</span><p>Lo especial no siempre hace ruido. A veces solo tiene tu nombre.</p><span class="note-heart">♥</span><small>guárdalo en el corazón</small></aside>
+      </div>
+    </section>
+
+    <section class="panel content-panel" id="razones" role="tabpanel" aria-labelledby="tab-razones" hidden>
+      <div class="section-heading"><p class="eyebrow"><span class="eyebrow-line"></span> PODRÍA SEGUIR TODO EL DÍA</p><h2>Mil razones para <em>quererte.</em></h2><p>Hoy te comparto unas cuantas. Las demás las guardo para después.</p></div>
+      <div class="reasons-wrap">
+        <div class="reason-counter"><span class="counter-number" id="reason-number">01</span><span>de 1000 razones<br>y contando...</span></div>
+        <div class="reason-display"><span class="reason-sparkle">✦</span><p id="reason-text">Porque tu existencia hace que todo tenga un poquito más de luz.</p><span class="reason-bottom">UNA RAZÓN MÁS PARA SONREÍR</span></div>
+        <button class="round-next" id="next-reason" aria-label="Ver otra razón">↗</button>
+      </div>
+      <div class="reason-dots" aria-hidden="true"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </section>
+
+    <section class="panel content-panel surprise-panel" id="sorpresa" role="tabpanel" aria-labelledby="tab-sorpresa" hidden>
+      <div class="surprise-content"><div class="surprise-orbit"><span>✦</span><div class="surprise-heart">♥</div><i>♡</i></div><p class="eyebrow"><span class="eyebrow-line"></span> UNA ÚLTIMA COSITA</p><h2>Abre esto cuando<br>necesites un <em>abrazo.</em></h2><p class="surprise-description">No puedo guardarte uno en una cajita, pero sí puedo dejarte estas palabras.</p><button class="button button-primary surprise-button" id="open-surprise">Abrir mi abrazo <span aria-hidden="true">♡</span></button><div class="tiny-signature">con amor, sin fecha de vencimiento</div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>hecho despacito, pensando en ti</span><span class="footer-heart">♥</span><span>un regalo que no necesita envoltura</span></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="hug-modal" aria-hidden="true">
+    <div class="hug-modal" role="dialog" aria-modal="true" aria-labelledby="hug-title">
+      <button class="modal-close" id="close-surprise" aria-label="Cerrar">×</button>
+      <div class="modal-heart">♥</div><p class="eyebrow">PAUSA UN SEGUNDITO</p><h2 id="hug-title">Ven aquí, <em>abrazote.</em></h2><p>Respira. Estás haciendo lo mejor que puedes, y eso ya es muchísimo. Ojalá pudiera estar ahí para recordártelo en persona. Mientras tanto, aquí va un abrazo enorme, de esos que duran un poquito más.</p><span class="modal-sign">te quiero cerquita ♡</span>
+    </div>
+  </div>
+  <div class="heart-burst" id="heart-burst" aria-hidden="true"></div>
+</body>
+</html>
